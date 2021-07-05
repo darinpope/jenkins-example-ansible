@@ -38,3 +38,5 @@
         state: started
     - name: verify installation
       ansible.builtin.command: mysql --version
+      register: mysql-version
+    - debug: var=mysql-version.stdout_lines
