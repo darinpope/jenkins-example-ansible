@@ -1,0 +1,5 @@
+[all:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[mariadbs]
+mariadb ansible_ssh_host=192.168.32.11 ansible_ssh_port=22 ansible_user=vagrant

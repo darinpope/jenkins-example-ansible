@@ -1,0 +1,38 @@
+- name: MariaDB installation
+  hosts: mariadbs
+  become: yes
+  tasks:
+    - name: enable and start firewalld service
+      systemd:
+        name: firewalld
+        state: started
+        enabled: yes
+    - name: permit traffic in default zone on port 22/tcp
+      ansible.posix.firewalld:
+        port: 22/tcp
+        permanent: yes
+        state: enabled
+        immediate: yes
+    - name: permit traffic in default zone on port 3306/tcp
+      ansible.posix.firewalld:
+        port: 3306/tcp
+        permanent: yes
+        state: enabled
+        immediate: yes
+    - name: MariaDB yum repository
+      yum_repository:
+        name: MariaDB
+        description: MariaDB
+        baseurl: http://yum.mariadb.org/10.6.2/centos$releasever-amd64
+        enabled: yes
+        gpgcheck: yes
+        gpgkey: https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+    - name: Install MariaDB server
+      yum:
+        name:
+          - MariaDB-server
+        state: latest
+    - name: start MariaDB service
+      systemd:
+        name: mariadb
+        state: started
