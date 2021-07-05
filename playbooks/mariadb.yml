@@ -36,3 +36,5 @@
       systemd:
         name: mariadb
         state: started
+    - name: verify installation
+      ansible.builtin.command: mysql --version
