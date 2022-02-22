@@ -3,7 +3,7 @@
    gather_facts: false
    become: yes
    tasks:
-   - name: EL Family | Adding repository {{ googlechrome_repo_el }}
+ - name: EL Family | Adding repository {{ googlechrome_repo_el }}
      yum_repository:
       name: "{{ googlechrome_repo_el_name }}"
       description: "{{ googlechrome_repo_el_description }}"
@@ -13,8 +13,7 @@
       file: "{{ googlechrome_repo_el_filename }}"
       state: "{{ googlechrome_repo_desired_state }}"
       enabled: "{{ googlechrome_repo_el_enabled }}"
-  
-  - name: EL Family | Installing {{ googlechrome_app_name }}
+ - name: EL Family | Installing {{ googlechrome_app_name }}
     yum:
       name: "{{ googlechrome_app_name }}"
       state: "{{ googlechrome_desired_state }}"
