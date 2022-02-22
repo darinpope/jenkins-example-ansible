@@ -1,8 +1,8 @@
  - name: Install and configure cockpit
-    hosts: webservers
-    gather_facts: false
-    become: yes
-    tasks:
+   hosts: webservers
+   gather_facts: false
+   become: yes
+   tasks:
      - name: Installing cockpit
        yum:
          name: "cockpit"
