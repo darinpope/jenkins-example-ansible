@@ -31,3 +31,4 @@
        service:
          name: firewall
          state: restarted
+
