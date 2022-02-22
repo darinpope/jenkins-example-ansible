@@ -8,7 +8,7 @@
          name:
          - yum-utils
          - "@Development tools"
-       lock_timeout: 180
+         lock_timeout: 180
      - name: Installing cockpit
        yum:
          name: "cockpit"
