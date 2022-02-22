@@ -3,8 +3,8 @@
    gather_facts: false
    become: yes
    tasks:
-      - name: Install yum utils
-        package:
+     - name: Install yum utils
+       package:
          name:
          - yum-utils
          - "@Development tools"
