@@ -26,7 +26,7 @@
          permanent: true
          state: enabled
          immediate: yes
-    handlers:
+   handlers:
      - name: Firewall reload
        service:
          name: firewall
