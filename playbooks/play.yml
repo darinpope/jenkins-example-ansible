@@ -1,9 +1,4 @@
-    - name: Install yum utils
-    yum:
-    name:
-      - yum-utils
-      - "@Development tools"
-    lock_timeout: 180
+ 
     - name: Install and configure cockpit
     hosts: webservers
     gather_facts: false
