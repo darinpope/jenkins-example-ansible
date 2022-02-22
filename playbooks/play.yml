@@ -1,5 +1,4 @@
- 
-    - name: Install and configure cockpit
+ - name: Install and configure cockpit
     hosts: webservers
     gather_facts: false
     become: yes
@@ -32,5 +31,3 @@
        service:
          name: firewall
          state: restarted
-
-
