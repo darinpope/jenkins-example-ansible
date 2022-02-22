@@ -1,0 +1,36 @@
+---
+  - name: Install and configure cockpit
+    hosts: webservers
+    gather_facts: false
+    become: yes
+    tasks:
+     - name: Installing cockpit
+       yum:
+         name: "cockpit"
+         state: latest
+     - name: Installing cockpit
+       yum:
+         name: "htop"
+         state: latest
+     - name: start cockpit
+       systemd:
+        name: cockpit.socket
+        state: started
+
+     - name: enable cockpit.socket
+       systemd:
+         name: cockpit.socket
+         enabled: yes
+     - name: Firewall rules
+       firewalld:
+         service: cockpit
+         permanent: true
+         state: enabled
+         immediate: yes
+    handlers:
+     - name: Firewall reload
+       service:
+         name: firewall
+         state: restarted
+
+
