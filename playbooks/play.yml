@@ -3,9 +3,9 @@
    gather_facts: false
    become: yes
    tasks:
-     - name: Install yum utils
-       package:
-       name:
+      - name: Install yum utils
+        package:
+         name:
          - yum-utils
          - "@Development tools"
        lock_timeout: 180
