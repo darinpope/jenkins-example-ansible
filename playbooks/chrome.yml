@@ -4,10 +4,10 @@
    become: yes
    tasks:
    - name: Install Google Chrome repo
-      copy: src=google-chrome.repo dest=/etc/yum.repos.d/
+     copy: src=google-chrome.repo dest=/etc/yum.repos.d/
 
    - name: Import Google Chrome signing key
-      rpm_key: key=https://dl-ssl.google.com/linux/linux_signing_key.pub state=present 
+     rpm_key: key=https://dl-ssl.google.com/linux/linux_signing_key.pub state=present 
 
    - name: Install Google Chrome
-      yum: name=google-chrome-stable state=present
+     yum: name=google-chrome-stable state=present
