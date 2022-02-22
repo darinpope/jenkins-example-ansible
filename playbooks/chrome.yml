@@ -1,8 +1,13 @@
- - name: Install Google Chrome repo
-   copy: src=google-chrome.repo dest=/etc/yum.repos.d/
+ - name: Install and configure cockpit
+   hosts: webservers
+   gather_facts: false
+   become: yes
+   tasks:
+   - name: Install Google Chrome repo
+      copy: src=google-chrome.repo dest=/etc/yum.repos.d/
 
- - name: Import Google Chrome signing key
-   rpm_key: key=https://dl-ssl.google.com/linux/linux_signing_key.pub state=present 
+   - name: Import Google Chrome signing key
+      rpm_key: key=https://dl-ssl.google.com/linux/linux_signing_key.pub state=present 
 
- - name: Install Google Chrome
-   yum: name=google-chrome-stable state=present
+   - name: Install Google Chrome
+      yum: name=google-chrome-stable state=present
