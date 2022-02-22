@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Installing Cockpit from GIT') {
       steps {
-        sh 'ansible-playbook -i inventory/web.env  playbooks/play.yml'
+        sh 'ansible-playbook -i inventory/web.env  --private-key=$ANSIBLE_PRIVATE_KEY playbooks/play.yml'
       }
     }
   }
