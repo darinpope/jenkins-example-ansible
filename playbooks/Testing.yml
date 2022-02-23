@@ -5,7 +5,7 @@
    tasks:
    - name: Nomachine >>>><<<<
      yum:
-       name: 'https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm ; https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm'
+       name: 'https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm , https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm'
        state: present
      become: yes
    - name: Nomachine >>>><<<<
