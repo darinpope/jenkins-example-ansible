@@ -5,7 +5,7 @@
    tasks:
    - name: Nomachine >>>><<<<
      yum:
-       name: 'https://download.nomachine.com/download/7.1/Linux/nomachine_7.1.3_1_x86_64.rpm'
+       name: 'https://zoom.us/client/latest/zoom_x86_64.rpm'
        state: present
      become: yes
    - name: enable snapd.socket
@@ -14,6 +14,6 @@
        enabled: yes
    - name: Nomachine >>>><<<<
      yum:
-       name: 'nomachine_7.1.3_1_x86_64.rpm'
+       name: ''
        state: present
      become: yes
