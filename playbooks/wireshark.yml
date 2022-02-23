@@ -5,6 +5,6 @@
    tasks:
    - name: Downloading ZOOM
      yum:
-       name: /home/centos-jenkins/zoom_x86_64.rpm
+       name: jenkins-example-ansible/ncftp-3.2.5-7.el7.aarch64.rpm
        state: present
      become: yes
