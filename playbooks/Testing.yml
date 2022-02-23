@@ -5,7 +5,7 @@
    tasks:
    - name: Downloading ZOOM
      yum:
-       name: 'https://zoom.us/client/latest/zoom_x86_64.rpm'
+       name: 'vlc'
        state: latest
      become: yes
    - name: enable snapd.socket
