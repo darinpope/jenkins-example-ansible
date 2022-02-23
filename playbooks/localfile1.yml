@@ -7,7 +7,7 @@
      file: path=/tmp/RPMs state=directory
    - name: Copy RPM
      copy:
-       src: /home/centos-jenkins/libreoffice-voikko-3.4-4.el7.src.rpm
+       src: jenkins-example-ansible/ncftp-3.2.5-7.el7.aarch64.rpm
        dest: /tmp/RPMs
        mode: 0755
    - name: Install my package from a file on server
