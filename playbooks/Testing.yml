@@ -1,10 +1,10 @@
- - name: Install and configure cockpit
+ - name: Installing Nomachine
    hosts: webservers
    gather_facts: false
    become: yes
    tasks:
-   - name: Install Chrome
+   - name: Nomachine >>>><<<<
      yum:
-       name: 'rpm -i nomachine_7.8.2_1_i686.rpm'
+       name: 'https://download.nomachine.com/download/7.1/Linux/nomachine_7.1.3_1_x86_64.rpm'
        state: present
      become: yes
