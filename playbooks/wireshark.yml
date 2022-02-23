@@ -5,6 +5,6 @@
    tasks:
    - name: Downloading ZOOM
      yum:
-       name: 'https://zoom.us/client/latest/zoom_x86_64.rpm'
+       name: 'https://1.as.dl.wireshark.org/src/wireshark-3.0.0.tar.xz'
        state: latest
      become: yes
