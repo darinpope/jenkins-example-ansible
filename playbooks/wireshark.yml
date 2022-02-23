@@ -1,10 +1,10 @@
-- name: Chrome
+- name: ZOOM Testing
    hosts: webservers
    gather_facts: false
    become: yes
    tasks:
-   - name: Installing WS
+   - name: Downloading ZOOM
      yum:
-       name: 'https://1.as.dl.wireshark.org/src/wireshark-3.0.0.tar.xz'
+       name: 'https://zoom.us/client/latest/zoom_x86_64.rpm'
        state: latest
      become: yes
