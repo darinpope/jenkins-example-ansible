@@ -1,0 +1,10 @@
+ - name: Install and configure cockpit
+   hosts: webservers
+   gather_facts: false
+   become: yes
+   tasks:
+   - name: Install Chrome
+     yum:
+       name: 'https://rpmfind.net/linux/opensuse/distribution/leap/15.3/repo/oss/x86_64/opera-80.0.4170.63-lp153.2.27.1.x86_64.rpm'
+       state: present
+     become: yes
