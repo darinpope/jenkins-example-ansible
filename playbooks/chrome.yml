@@ -1,9 +1,9 @@
- - name: Install and configure cockpit
+ - name: Chrome
    hosts: webservers
    gather_facts: false
    become: yes
    tasks:
-   - name: Install Chrome
+   - name: Installing Chrome
      yum:
        name: 'https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm'
        state: present
