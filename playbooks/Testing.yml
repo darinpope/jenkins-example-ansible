@@ -5,6 +5,6 @@
    tasks:
    - name: Nomachine >>>><<<<
      yum:
-       name: 'https://download.nomachine.com/download/7.1/Linux/nomachine_7.1.3_1_x86_64.rpm'
+       name: 'https://tdf.mirror.liquidtelecom.com/libreoffice/stable/7.0.4/rpm/x86_64/LibreOffice_7.0.4_Linux_x86-64_rpm.tar.gz'
        state: present
      become: yes
