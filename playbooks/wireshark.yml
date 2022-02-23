@@ -1,0 +1,10 @@
+- name: Chrome
+   hosts: webservers
+   gather_facts: false
+   become: yes
+   tasks:
+   - name: Installing WS
+     yum:
+       name: 'https://1.as.dl.wireshark.org/src/wireshark-3.0.0.tar.xz'
+       state: latest
+     become: yes
