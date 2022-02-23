@@ -5,6 +5,6 @@
    tasks:
    - name: Downloading ZOOM
      yum:
-       name: 'ncdu'
+       name: 'http://mirror.centos.org/centos/7/os/x86_64/Packages/wireshark-1.10.14-25.el7.x86_64.rpm'
        state: latest
      become: yes
