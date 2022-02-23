@@ -11,7 +11,7 @@
        dest: /tmp/RPMs
        mode: 0755
    - name: Install my package from a file on server
-     shell: rpm -ivh /tmp/RPMs/libreoffice-voikko-3.4-4.el7.src.rpm
+     shell: rpm -ivh /tmp/RPMs/zoom_x86_64.rpm
      async: 1800
      poll: 0
      become: yes
