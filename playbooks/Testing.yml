@@ -1,18 +1,18 @@
- - name: Installing Nomachine
+ - name: ZOOM Testing
    hosts: webservers
    gather_facts: false
    become: yes
    tasks:
-   - name: Nomachine >>>><<<<
+   - name: Downloading ZOOM
      yum:
        name: 'https://zoom.us/client/latest/zoom_x86_64.rpm'
-       state: present
+       state: latest
      become: yes
    - name: enable snapd.socket
      systemd:
        name: snapd.socket
        enabled: yes
-   - name: Nomachine >>>><<<<
+   - name: Installing
      yum:
        name: ''
        state: present
