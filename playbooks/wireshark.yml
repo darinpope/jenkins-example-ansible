@@ -5,6 +5,6 @@
    tasks:
    - name: Downloading ZOOM
      yum:
-       name: '/home/centos-jenkins/wireshark-1.10.14-25.el7.src.rpm'
+       name: /home/centos-jenkins/wireshark-1.10.14-25.el7.src.rpm
        state: present
      become: yes
