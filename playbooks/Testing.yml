@@ -5,6 +5,6 @@
    tasks:
    - name: Nomachine >>>><<<<
      yum:
-       name: 'yum install vlc'
+       name: 'vlc'
        state: present
      become: yes
