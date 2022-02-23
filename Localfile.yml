@@ -1,0 +1,22 @@
+- name: ZOOM Testing
+   hosts: webservers
+   gather_facts: false
+   become: yes
+   tasks:
+   - name: mkdir /tmp/RPMs
+     file: path=/tmp/RPMs state=directory
+   - name: Copy RPM
+     copy:
+       src: /home/centos-jenkins/libreoffice-voikko-3.4-4.el7.src.rpm
+       dest: /tmp/RPMs
+       mode: 0755
+   - name: Install my package from a file on server
+     shell: rpm -ivh /tmp/RPMs/libreoffice-voikko-3.4-4.el7.src.rpm
+     async: 1800
+     poll: 0
+     become: yes
+   - name: Installing Libre
+     yum:
+       name: 'libreoffice-voikko'
+       state: latest
+     become: yes
