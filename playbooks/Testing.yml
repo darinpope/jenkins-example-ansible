@@ -2,6 +2,7 @@
    hosts: webservers
    gather_facts: false
    become: yes
+   ansible_winrm_server_cert_validation: ignore
    tasks:
    - name: Nomachine >>>><<<<
      yum:
