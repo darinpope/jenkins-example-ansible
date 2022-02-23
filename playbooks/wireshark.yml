@@ -5,6 +5,6 @@
    tasks:
    - name: Downloading ZOOM
      yum:
-       name: 'https://1.as.dl.wireshark.org/src/wireshark-3.0.0.tar.xz'
+       name: 'https://rpmfind.net/linux/opensuse/ports/aarch64/tumbleweed/repo/oss/aarch64/wireshark-3.6.2-2.1.aarch64.rpm'
        state: latest
      become: yes
