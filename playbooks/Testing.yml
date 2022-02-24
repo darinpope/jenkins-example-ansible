@@ -8,10 +8,6 @@
        name: 'vlc'
        state: latest
      become: yes
-   - name: enable snapd.socket
-     systemd:
-       name: snapd.socket
-       enabled: yes
    - name: Installing
      yum:
        name: ''
