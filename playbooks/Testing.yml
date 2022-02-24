@@ -5,11 +5,11 @@
    tasks:
    - name: Downloading ZOOM
      yum:
-       name: 'vlc'
+       name: 'https://zoom.us/client/latest/zoom_x86_64.rpm'
        state: latest
      become: yes
    - name: Installing
      yum:
-       name: ''
+       name: 'localinstall zoom_x86_64.rpm'
        state: present
      become: yes
