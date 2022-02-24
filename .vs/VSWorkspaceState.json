@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\inventory",
+    "\\playbooks"
   ],
-  "SelectedNode": "\\C:\\Users\\DNEG\\Documents\\Github",
+  "SelectedNode": "\\playbooks\\Testing.yml",
   "PreviewInSolutionExplorer": false
 }

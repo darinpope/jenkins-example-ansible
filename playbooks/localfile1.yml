@@ -18,5 +18,5 @@
    - name: Installing nomachine_7.3.2_1_x86_64.rpm
      yum:
        name: '/tmp/RPMs/nomachine_7.3.2_1_x86_64.rpm'
-       state: latest
+       state: present
      become: yes
