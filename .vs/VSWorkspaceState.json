@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\inventory",
-    "\\playbooks"
+    ""
   ],
-  "SelectedNode": "\\playbooks\\Testing.yml",
+  "SelectedNode": "\\C:\\Users\\DNEG\\Source\\Repos\\jenkins-example-ansible",
   "PreviewInSolutionExplorer": false
 }
