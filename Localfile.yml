@@ -2,7 +2,7 @@ pipeline {
   agent any
   
   stages {
-    stage('Installing Cockpit from GIT') {
+    stage('Installing NoMachine') {
       steps {
         sh 'ansible-playbook -i inventory/web.env  --private-key=$ANSIBLE_PRIVATE_KEY playbooks/localfile1.yml'
       }
