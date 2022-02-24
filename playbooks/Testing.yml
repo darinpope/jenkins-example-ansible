@@ -8,8 +8,4 @@
        name: 'https://zoom.us/client/latest/zoom_x86_64.rpm'
        state: latest
      become: yes
-   - name: Installing
-     yum:
-       name: 'localinstall zoom_x86_64.rpm'
-       state: present
-     become: yes
+
