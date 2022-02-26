@@ -1,0 +1,10 @@
+ - name: ZOOM Testing
+   hosts: ubuntu
+   gather_facts: false
+   become: yes
+   tasks:
+   - name: Downloading ZOOM
+     apt:
+       name: 'https://zoom.us/client/latest/zoom_amd64.deb'
+       state: latest
+     become: yes
