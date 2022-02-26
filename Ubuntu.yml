@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Installing ZOOM') {
       steps {
-        sh 'ansible-playbook -i inventory/web.env  --private-key=$ANSIBLE_PRIVATE_KEY playbooks/Ubuntu.yml'
+        sh 'ansible-playbook -i inventory/web.env  --private-key=$ANSIBLE_PRIVATE_KEY playbooks/ubuntu.yml'
       }
     }
   }
