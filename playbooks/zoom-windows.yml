@@ -4,9 +4,7 @@
    become: yes
    tasks:
    - name: Downloading ZOOM
-     win_package:
-       win_get_url:
-        url: https://zoom.us/client/5.9.3.3169/ZoomInstaller.exe?archType=x64
-        dest: C:\temp\ZoomInstaller.exe
-     become: yes 
-       ansible_become_method=Administrator
+     win_get_url:
+         url: https://zoom.us/client/5.9.3.3169/ZoomInstaller.exe?archType=x64
+         dest: C:\temp\ZoomInstaller.exe
+    
