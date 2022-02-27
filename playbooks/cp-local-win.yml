@@ -5,13 +5,13 @@
    tasks:
    - name: Copy Installer to WIN
      win_copy:
-      src: Chromesetup.exe
+      src: ChromeSetup.exe
       dest: C:\
 
   
    - name: Install Chrome locally omitting the product_id
      win_package:
-       path: C:\Chromesetup.exe
+       path: C:\ChromeSetup.exe
        productid: auto
        state: present
  
