@@ -5,8 +5,8 @@
    tasks:
    - name: Copy Installer to WIN
      win_copy:
-      src: ChromeSetup.exe
-      dest: C:\
+       src: ChromeSetup.exe
+       dest: C:\
 
    
    - name: Install chocolatey
