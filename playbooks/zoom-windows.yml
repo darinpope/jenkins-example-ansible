@@ -5,9 +5,12 @@
    tasks:
    - name: Install Remote Desktop Connection Manager locally omitting the product_id
      win_package:
-       path: C:\temp\Zoominstaller.exe
+       path: C:\Zoominstaller.exe
        productid: auto
        state: present
+
+
+
    # name: Downloading ZOOM
     # win_command: C:\Zoominstaller.exe /i C:\temp\7z.msi /qn /norestart
      # state: present
