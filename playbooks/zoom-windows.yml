@@ -8,7 +8,7 @@
        url: https://zoom.us/client/5.9.3.3169/ZoomInstaller.exe?archType=x64
        dest: C:\Zoominstaller.exe
 
-   - name: Install Remote Desktop Connection Manager locally omitting the product_id
+   - name: Install ZOOM locally omitting the product_id
      win_package:
        path: C:\Zoominstaller.exe
        productid: auto
