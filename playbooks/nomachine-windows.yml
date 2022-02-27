@@ -18,4 +18,4 @@
     - name: Install NXSERVER
       win_chocolatey:
        name: nomachine
-       state: present
+      
