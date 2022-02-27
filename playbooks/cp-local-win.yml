@@ -5,7 +5,7 @@
    tasks:
    - name: Copy Installer to WIN
      copy:
-      src: Chromesetup.exe
+      src: play.yml
       dest: C:\
 
   
