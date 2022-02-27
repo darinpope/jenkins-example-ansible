@@ -11,6 +11,7 @@
   
   - name: Install Chrome locally omitting the product_id
     win_package:
-     path: C:\Chromeinstaller.exe
-     productid: auto
-     state: present
+      path: C:\Chromeinstaller.exe
+      productid: auto
+      state: present
+ 
