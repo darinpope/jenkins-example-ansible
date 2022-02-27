@@ -8,9 +8,7 @@
       src: ChromeSetup.exe
       dest: C:\
 
-   - name: "Chocolatey"
-     hosts: windows
-     tasks:
+   
    - name: Install chocolatey
      win_chocolatey:
        name:
