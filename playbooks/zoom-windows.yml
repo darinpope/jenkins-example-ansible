@@ -10,4 +10,5 @@
       state: present
    - name: Downloading ZOOM
      win_command: C:\Zoominstaller.exe /i C:\temp\7z.msi /qn /norestart
+     state: present
     
