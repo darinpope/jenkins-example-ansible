@@ -20,7 +20,6 @@
      win_chocolatey:
         name: googlechrome
         state: present
-        ignore_checksums: yes
     #- name: Install Chrome locally omitting the product_id
      #win_package:
       # path: C:\ChromeSetup.exe
