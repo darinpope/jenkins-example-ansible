@@ -5,7 +5,10 @@
    tasks:
    - name: Downloading ZOOM
      win_package:
-       path: 'https://zoom.us/client/5.9.3.3169/ZoomInstaller.exe?archType=x64'
+       win_get_url:
+        url: https://zoom.us/client/5.9.3.3169/ZoomInstaller.exe?archType=x64
+        dest: C:\temp\ZoomInstaller.exe
+
        state: present
      become: yes 
        ansible_become_method=Administrator
