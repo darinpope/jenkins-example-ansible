@@ -8,4 +8,4 @@
        path: 'https://zoom.us/client/5.9.3.3169/ZoomInstaller.exe?archType=x64'
        state: present
      become: yes 
-       ansible_become_method=runas
+       ansible_become_method=Administrator
