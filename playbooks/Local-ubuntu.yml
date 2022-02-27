@@ -17,6 +17,6 @@
      become: yes
    - name: Installing nomachine_7.8.2_1_amd64.deb
      apt:
-       deb: '/tmp/DEBs/nomachine_7.8.2_1_amd64.deb'
+       deb: /tmp/DEBs/nomachine_7.8.2_1_amd64.deb
        state: present
      become: yes
