@@ -17,5 +17,5 @@
 
     - name: Install NXSERVER
       win_chocolatey:
-       name: nomachine
+        name: nomachine
       
