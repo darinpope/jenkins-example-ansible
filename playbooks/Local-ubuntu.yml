@@ -1,0 +1,22 @@
+ - name: nomachine_7.8.2_1_x86_64.rpm
+   hosts: webservers
+   gather_facts: false
+   become: yes
+   tasks:
+   - name: mkdir /tmp/DEBs
+     file: path=/tmp/DEBs state=directory
+   - name: Copy DEB
+     copy:
+       src:  nomachine_7.8.2_1_x86_64.deb
+       dest: /tmp/DEBs
+       mode: 0755
+   - name: Install my package from a file on server
+     shell: rpm -ivh /tmp/DEBs/nomachine_7.8.2_1_x86_64.deb
+     async: 1800
+     poll: 0
+     become: yes
+   - name: Installing nomachine_7.8.2_1_x86_64.deb
+     apt:
+       deb: '/tmp/DEBs/nomachine_7.8.2_1_x86_64.deb'
+       state: present
+     become: yes
