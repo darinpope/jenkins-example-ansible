@@ -4,7 +4,7 @@
    become: false
    tasks:
    - name: Copy Installer to WIN
-     ansible.windows.win_copy:
+     win_copy:
       src: /opt/Chromeinstaller.exe
       dest: C:\
 
