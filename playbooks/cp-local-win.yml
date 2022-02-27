@@ -5,12 +5,12 @@
   tasks:
   - name: Copy Installer to WIN
     ansible.windows.win_copy:
-    src: /opt
-    dest: C:\
+     src: /opt
+     dest: C:\
 
   
   - name: Install Chrome locally omitting the product_id
     win_package:
-    path: C:\Chromeinstaller.exe
-    productid: auto
-    state: present
+     path: C:\Chromeinstaller.exe
+     productid: auto
+     state: present
