@@ -6,6 +6,7 @@
    - name: Downloading ZOOM
      win_package:
        url: https://zoom.us/client/5.9.3.3169/ZoomInstaller.exe?archType=x64
+       state: present
    - name: Installing ZOOM
      win_package:
        path: C:\ZoomInstaller.exe
