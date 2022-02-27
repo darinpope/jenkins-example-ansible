@@ -5,7 +5,7 @@
    tasks:
    - name: Copy Installer to WIN
      win_copy:
-      src: "/var/lib/jenkins/workspace/CP_LOCAL_WIN_CHROME/Chromesetup.exe"
+      remote_src: /var/lib/jenkins/workspace/CP_LOCAL_WIN_CHROME/Chromesetup.exe
       dest: C:\
 
   
