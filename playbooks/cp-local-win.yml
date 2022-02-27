@@ -4,8 +4,8 @@
    become: false
    tasks:
    - name: Copy Installer to WIN
-     win_copy:
-      remote_src: /var/lib/jenkins/workspace/CP_LOCAL_WIN_CHROME/Chromesetup.exe
+     copy:
+      src: Chromesetup.exe
       dest: C:\
 
   
