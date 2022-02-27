@@ -4,7 +4,7 @@
    become: yes
    tasks:
    - name: Downloading ZOOM
-     apt-get:
+     apt:
        name: 'https://zoom.us/client/latest/zoom_amd64.deb'
        state: latest
      become: yes
