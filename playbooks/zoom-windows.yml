@@ -5,10 +5,10 @@
    tasks:
    - name: Download Zoom
      win_get_url:
-      url: https://https://zoom.us/client/5.9.3.3169/ZoomInstaller.exe?archType=x64
-      dest: C:\Zoominstaller.exe
-      productid: auto
-      state: present
+       url: https://https://zoom.us/client/5.9.3.3169/ZoomInstaller.exe?archType=x64
+       dest: C:\Zoominstaller.exe
+       productid: auto
+       state: present
 
    - name: Install Remote Desktop Connection Manager locally omitting the product_id
      win_package:
