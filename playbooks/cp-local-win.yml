@@ -5,7 +5,7 @@
   tasks:
   - name: Copy Installer to WIN
     ansible.windows.win_copy:
-      src: /opt
+      src: /opt/Chromeinstaller.exe
       dest: C:\
 
   
