@@ -3,13 +3,19 @@
    gather_facts: false
    become: false
    tasks:
-   - name: Download nomachine_7.8.2_1.exe
-     win_get_url:
-       url: https://download.nomachine.com/download/7.8/Windows/nomachine_7.8.2_1.exe
-       dest: C:\nomachine_7.8.2_1.exe
+  # - name: Download nomachine_7.8.2_1.exe
+   # win_get_url:
+    #   url: https://download.nomachine.com/download/7.8/Windows/nomachine_7.8.2_1.exe
+     #  dest: C:\nomachine_7.8.2_1.exe
 
-   - name: Install nomachine_7.8.2_1 locally omitting the product_id
-     win_package:
-       path: C:\nomachine_7.8.2_1.exe
-       productid: auto
+  #- name: Install nomachine_7.8.2_1 locally omitting the product_id
+   #  win_package:
+    #   path: C:\nomachine_7.8.2_1.exe
+     #  productid: auto
+      # state: present
+
+
+    - name: Install Google Chrome
+      win_chocolatey:
+       name: nomachine
        state: present
