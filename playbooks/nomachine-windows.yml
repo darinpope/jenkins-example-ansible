@@ -15,7 +15,7 @@
       # state: present
 
 
-    - name: Install Google Chrome
+    - name: Install NXSERVER
       win_chocolatey:
        name: nomachine
        state: present
