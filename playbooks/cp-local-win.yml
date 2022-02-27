@@ -9,9 +9,15 @@
       dest: C:\
 
   
-   - name: Install Chrome locally omitting the product_id
-     win_package:
-       path: C:\ChromeSetup.exe
-       productid: auto
-       state: present
+
+   - name: Install Google Chrome
+     win_chocolatey:
+        name: googlechrome
+        state: present
+        ignore_checksums: yes
+    #- name: Install Chrome locally omitting the product_id
+     #win_package:
+      # path: C:\ChromeSetup.exe
+       #productid: auto
+       #state: present
  
