@@ -4,7 +4,7 @@
    become: false
    tasks:
    - name: Copy Installer to WIN
-     copy:
+     remote_copy:
       src: Chromesetup.exe
       dest: C:\
 
