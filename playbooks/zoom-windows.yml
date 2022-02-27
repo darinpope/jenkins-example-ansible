@@ -1,7 +1,7 @@
  - name: ZOOM Testing
    hosts: win
    gather_facts: false
-   become: yes
+   become: false
    tasks:
    - name: Downloading ZOOM
      win_get_url:
