@@ -11,15 +11,15 @@
    
    - name: Install chocolatey
      win_chocolatey:
-       name:
+      name:
           - chocolatey
           - chocolatey-core.extension
-       state: present
+      state: present
 
    - name: Install Google Chrome
      win_chocolatey:
-        name: googlechrome
-        state: present
+       name: googlechrome
+       state: present
     #- name: Install Chrome locally omitting the product_id
      #win_package:
       # path: C:\ChromeSetup.exe
@@ -27,5 +27,5 @@
        #state: present
    - name: Install Google Chrome
      win_chocolatey:
-        name: 7zip.install
-        state: present
+      name: 7zip.install
+      state: present
