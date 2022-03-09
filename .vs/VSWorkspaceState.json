@@ -4,6 +4,6 @@
     "\\inventory",
     "\\playbooks"
   ],
-  "SelectedNode": "\\playbooks\\ubuntu.yml",
+  "SelectedNode": "\\playbooks\\nomachine-windows.yml",
   "PreviewInSolutionExplorer": false
 }
