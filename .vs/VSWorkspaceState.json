@@ -4,6 +4,6 @@
     "\\inventory",
     "\\playbooks"
   ],
-  "SelectedNode": "\\playbooks\\nomachine-windows.yml",
+  "SelectedNode": "\\inventory\\web.env",
   "PreviewInSolutionExplorer": false
 }
