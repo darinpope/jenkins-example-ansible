@@ -1,4 +1,4 @@
- - name: nomachine_7.8.2_1_x86_64.rpm
+ - name: nomachine_6.9.2_1_x86_64
    hosts: webservers
    gather_facts: false
    become: yes
@@ -7,7 +7,7 @@
      file: path=/tmp/RPMs state=directory
    - name: Copy RPM
      copy:
-       src:  nomachine_7.8.2_1_x86_64.rpm
+       src:  nomachine_6.9.2_1_x86_64
        dest: /tmp/RPMs
        mode: 0755
    - name: Install my package from a file on server
