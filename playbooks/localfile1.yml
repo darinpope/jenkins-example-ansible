@@ -1,4 +1,4 @@
- - name: nomachine_6.9.2_1_x86_64
+ - name: nomachine
    hosts: webservers
    gather_facts: false
    become: yes
@@ -7,16 +7,17 @@
      file: path=/tmp/RPMs state=directory
    - name: Copy RPM
      copy:
-       src:  nomachine_6.9.2_1_x86_64.rpm
+       src:  nomachine_7.8.2_1_i686.rpm
        dest: /tmp/RPMs
        mode: 0755
    - name: Install my package from a file on server
-     shell: rpm -ivh /tmp/RPMs/nomachine_6.9.2_1_x86_64.rpm
+     shell: rpm -ivh /tmp/RPMs/nomachine_7.8.2_1_i686.rpm
      async: 1800
      poll: 0
      become: yes
-   - name: Installing nomachine_6.9.2_1_x86_64.rpm
+   - name: Installing nomachine_7.8.2_1_i686.rpm
      yum:
-       name: '/tmp/RPMs/nomachine_6.9.2_1_x86_64.rpm'
+       name: '/tmp/RPMs/nomachine_7.8.2_1_i686.rpm
+'
        state: present
      become: yes
