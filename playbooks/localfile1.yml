@@ -7,7 +7,7 @@
      file: path=/tmp/RPMs state=directory
    - name: Copy RPM
      copy:
-       src:  nomachine_6.9.2_1_x86_64
+       src:  nomachine_6.9.2_1_x86_64.rpm
        dest: /tmp/RPMs
        mode: 0755
    - name: Install my package from a file on server
