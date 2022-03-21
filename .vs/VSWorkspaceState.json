@@ -4,6 +4,6 @@
     "\\inventory",
     "\\playbooks"
   ],
-  "SelectedNode": "\\inventory\\web.env",
+  "SelectedNode": "\\playbooks\\play.yml",
   "PreviewInSolutionExplorer": false
 }
