@@ -2,6 +2,7 @@
    hosts: webservers
    gather_facts: false
    become: yes
+   host_key_checking: False
    tasks:
    - name: Downloading ZOOM
      yum:
