@@ -14,8 +14,8 @@
    - name: Install multiple packages
      win_chocolatey:
       name:
-       - procexp
+       - googlechrome
        - putty
-       - windirstat
+       - firefox
       state: present
  
