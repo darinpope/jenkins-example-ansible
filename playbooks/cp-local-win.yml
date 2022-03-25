@@ -3,11 +3,6 @@
    gather_facts: false
    become: false
    tasks:
-   - name: Copy Installer to WIN
-     win_copy:
-       src: ChromeSetup.exe
-       dest: C:\
-
    
    - name: Install chocolatey
      win_chocolatey:
@@ -20,12 +15,4 @@
      win_chocolatey:
        name: googlechrome
        state: present
-    #- name: Install Chrome locally omitting the product_id
-     #win_package:
-      # path: C:\ChromeSetup.exe
-       #productid: auto
-       #state: present
-   - name: Install Google Chrome
-     win_chocolatey:
-      name: 7zip.install
-      state: present
+ 
