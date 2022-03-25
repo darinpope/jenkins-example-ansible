@@ -11,8 +11,11 @@
           - chocolatey-core.extension
       state: present
 
-   - name: Install Google Chrome
+   - name: Install multiple packages
      win_chocolatey:
-       name: googlechrome
-       state: present
+      name:
+       - procexp
+       - putty
+       - windirstat
+      state: present
  
