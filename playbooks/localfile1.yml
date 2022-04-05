@@ -2,6 +2,9 @@
    hosts: webservers
    gather_facts: false
    become: yes
+   vars:
+        ansible_python_interpreter: /usr/bin/python
+
    tasks:
    - name: mkdir /tmp/RPMs
      file: path=/tmp/RPMs state=directory
