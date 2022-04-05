@@ -19,7 +19,7 @@
      poll: 0
      become: yes
    - name: Installing nomachine_7.8.2_1_i686.rpm
-     yum:
+     dnf:
        name: '/tmp/RPMs/nomachine_7.8.2_1_i686.rpm
 '
        state: present
