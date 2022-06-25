@@ -1,6 +1,7 @@
 pipeline {
   agent any
 
+#hehe added ?
   stages {
     stage('Hello') {
       steps {
